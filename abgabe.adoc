@@ -4,17 +4,76 @@
 
 _Lösung für Aufgabe 1_
 
+*Name*: Anna Schuhmann (23), Korrektor
+
+*Hintergrund*: Anna studiert Informatik an der HHU. Sie hat in den vorherigen Semestern Programmierpraktikum I sowie II mit guten Noten bestanden und arbeitet jetzt nebenbei als Korrektor in Programmierpraktikum I.
+
+Privat benutzt Anna Windows 10 und für die Uni Ubuntu da sie an einem Programmierprojekt mit anderen Studenten arbeitet.
+
+Sie ärgert sich das AUAS jedes Mal so lange braucht um die Seite zu laden, weswegen sie nur kurze Korrekturen schreibt um die verlorene Zeit wieder gut zu machen. Bei knapper Punktzahl lässt sie die Studierenden bestehen um die Zweit-Korrektur zu umgehen.
+
+*Ziel*: So schnell wie möglich die Korrektor fertig machen um an das Projekt weiter zu machen.
+
+
+*Name*: Erik Vogel (26), Organisator
+
+*Hintergrund*: Erik arbeitet seit kurzem an der HHU unter anderem als Organisator in Programmierpraktikum I.
+
+Erik hat sein Bachelor an einer anderen Uni erreicht und kennt sich deshalb sehr gut in Programmieren aus. Er arbeitet sehr viel mit Kubuntu und anderen basierenden Linux Betriebssystemen.
+
+Er findet Auas schrecklich da es sehr träge ist und wenn er die Liste der Studenten von Programmierprojekt I braucht, braucht es mehrere Minuten um zu laden, da es alle Studenten auflistet anstatt nur der Vorlesung. Er hat ein „Hack“ programmiert um auf die Liste der Studenten schneller ran zu kommen ohne dabei die Liste aller Studenten zu laden. Er findet es ziemlich umständlich und anstrengend so zu arbeiten und hofft auf eine bessere Alternative.
+
+*Ziel*: Möchte gern entspannender und zügiger arbeiten.
+
+
 == Aufgabe 2: Abgabesystem
 
 _Lösung für Aufgabe 2_
+
+Aus resultierenden Workflow ergeben sich für mich sieben Komponenten:
+
+	- Studierende
+	- Korrektor
+	- Organisator
+	- Aufgaben
+	- Abgabe
+	- Verteilung
+	- Korrektur
+
+Die Komponente Studierende besitzt die schwächsten Zugriffsrechte auf alle Komponenten. Sie speichert Informationen von Studierenden wie Name, Mat.nr., Fach, Vorlesung, E-Mail. Sie kann in die Korrektur einsehen und eine Abgabe schreiben.
+
+Korrektor speichert Information von den Korrektoren wie Name, Fach, Vorlesung, Email und hat mehr Zugriffsrechte als die Komponente Studierende aber schwächer als Organisator. Sie kann in die Komponente Studierende und dessen Abgabe einsehen und in die Korrektur schreiben und ändern.
+
+Organisator, speichert Informationen von den Organisatoren wie Name, Vorlesung, E-Mail und besitzt die stärksten Zugriffsrechte der insgesamt drei Komponenten (Studierender, Korrektor, Organisator).
+Die Komponente kann Informationen von Korrektoren und Aufgaben schreiben und löschen, sowie in Studierende und dessen Abgabe einsehen. Des Weiteren kann diese auf die Verteilung zugreifen und ändern.
+
+Die Kompetente Aufgabe beinhaltet das Arbeitsblatt, diese kann vom Organisator geschrieben und  geändert werden.
+
+Die Verteilung greift auf die Kompetente Studierende und kann nach Vorlesung die Studierende auf die Korrektoren der selben Vorlesung verteilen. Des Weiteren kann Verteilung vom Organisator geschrieben und geändert werden.
+
+Die Abgabe beinhaltet die Abgabe die vom Studierenden erstellt werden und eine Frist (Datum).
+Abgaben können vom Korrektor sowie Organisator eingesehen werden und vom Organisator geschrieben.
+
+Die Korrektur wird vom Studierenden geschrieben und kann von der Verteilung zugewiesener Korrektor und vom Organisator eingesehen werden.
 
 == Aufgabe 3: Namensfindung
 
 _Lösung für Aufgabe 3_
 
+LATM = Livechat Terminkalender Mediathek Abgabesystem
+
+SPAM = StudienPortal Abgabesystem Mediathek
+
 == Aufgabe 4: Funktionsumfang
 
 _Lösung für Aufgabe 4_
+
+*Livechat*: Die Aufgabe des System ist es eine direkte Kommunikation zum Korrektor von der korrigierten Abgabe herzustellen, ohne dabei auf Zweit-Platformen umzusteigen.
+Es erleichtert dem Studierenden die Kommunikation, da man so immer den selben Kommunikationsweg zu jedem Korrektor hat und nicht zu jedem Korrektor ein anderen Kommunikationsweg benutzen muss. Des Weiteren erleichtert es dem Studierenden sowie dem Korrektor die Übersicht zu behalten und der Korrektor muss nicht die Abgabe heraus suchen (Mit wem habe ich was besprochen? usw.).
+
+*Terminkalender*: Die Aufgabe des System ist wichtige Termine in einem Kalender darzustellen. Organisatoren und Professoren können so jedem Studierenden wichtige Informationen übergeben, wie z.B. Prüfungstermin, Ausfall der Vorlesung/Übung, Abgabe der Arbeitsblätter, besondere Veranstaltungen usw.
+Studierende können auch für sich selber den Terminkalender ergänzen um so alles in einem Blick zu haben und ihre Woche somit besser strukturieren zu können.
+
 
 == Kommentare
 
